@@ -1,0 +1,237 @@
+#
+## Git Tutorial: A Beginner's Guide to Basic Commands
+
+In this tutorial, we'll cover essential Git commands to help you get started with version control. Follow along with the commands below to create and manage a Git repository effectively.
+
+### Step 1: Set Up Your Repository
+
+1. **List Files**  
+   Start by listing files in your current directory:
+   ```bash
+   ls
+   ```
+
+2. **Create a New Directory**  
+   Create a new directory for your project:
+   ```bash
+   mkdir git-for-devops
+   ```
+
+3. **Change into the New Directory**  
+   Navigate into your project directory:
+   ```bash
+   cd git-for-devops/
+   ```
+
+4. **Check Your Current Directory**  
+   Confirm your location:
+   ```bash
+   pwd
+   ```
+
+5. **Initialize a Git Repository**  
+   Set up a new Git repository:
+   ```bash
+   git init
+   ```
+
+6. **List All Files, Including Hidden Ones**  
+   View all files, including hidden ones:
+   ```bash
+   ls -a
+   ```
+
+### Step 2: Create and Manage Files
+
+7. **Check Repository Status**  
+   See the current status of your repository:
+   ```bash
+   git status
+   ```
+
+8. **Create a New File**  
+   Open a new file in a text editor:
+   ```bash
+   vim hello-dosto.txt
+   ```
+
+9. **Check Status Again**  
+   Check the status after creating the file:
+   ```bash
+   git status
+   ```
+
+10. **Create Additional Files**  
+    Create multiple new files:
+    ```bash
+    touch nibbi.txt nibba.txt
+    ```
+
+11. **List Files Again**  
+    Confirm the files were created:
+    ```bash
+    ls
+    ```
+
+### Step 3: Stage and Commit Changes
+
+12. **Add a File to Staging**  
+    Stage a file for commit:
+    ```bash
+    git add nibbi.txt
+    ```
+
+13. **Check Status**  
+    Verify the staging area:
+    ```bash
+    git status
+    ```
+
+14. **Stage Another File**  
+    Add another file:
+    ```bash
+    git add nibba.txt
+    ```
+
+15. **Check Status Again**  
+    Confirm the files are staged:
+    ```bash
+    git status
+    ```
+
+16. **Remove a File from Staging**  
+    If you want to unstage a file:
+    ```bash
+    git rm --cached nibba.txt
+    ```
+
+17. **Stage the File Again**  
+    Re-add the file:
+    ```bash
+    \git add nibba.txt
+    ```
+
+18. **Check Status**  
+    Check the status once more:
+    ```bash
+    git status
+    ```
+
+19. **Commit Changes**  
+    Commit your changes with a message:
+    ```bash
+    git commit -m "adding nibba nibbi" nibbi.txt nibba.txt
+    ```
+
+### Step 4: Configure Git
+
+20. **Set Your Username**  
+    Configure your global Git username:
+    ```bash
+    git config --global user.name "ganeshkgaikwad3"
+    ```
+
+21. **Set Your Email**  
+    Configure your global Git email:
+    ```bash
+    git config --global user.email "ganeshkgaikwad3@gmail.com"
+    ```
+
+### Step 5: Edit and Manage Files
+
+22. **Edit a File**  
+    Open a file for editing:
+    ```bash
+    vi nibbi.txt
+    ```
+
+23. **Check Status Again**  
+    Verify the repository status:
+    ```bash
+    git status
+    ```
+
+24. **Stage the Edited File**  
+    Stage the changes:
+    ```bash
+    git add nibbi.txt
+    ```
+
+25. **Commit the Changes**  
+    Commit your edits:
+    ```bash
+    git commit -m "edit nibbi" nibbi.txt
+    ```
+
+26. **Remove a File**  
+    To remove a file:
+    ```bash
+    rm hello-dosto.txt
+    ```
+
+27. **Check Status Again**  
+    Confirm the current status:
+    ```bash
+    git status
+    ```
+
+### Step 6: Branching and Viewing History
+
+28. **View Commit History**  
+    Check the commit log:
+    ```bash
+    git log
+    ```
+
+29. **Create a New Branch**  
+    Create and switch to a new branch:
+    ```bash
+    git checkout -b dev
+    ```
+
+30. **Create Another File**  
+    Open a new file for the branch:
+    ```bash
+    vim nibbu.txt
+    ```
+
+31. **Stage and Commit the New File**  
+    Add and commit the new file:
+    ```bash
+    git add nibbu.txt
+    git commit -m "add nibbu" nibbu.txt
+    ```
+
+32. **Switch Back to Master Branch**  
+    Go back to the master branch:
+    ```bash
+    git checkout master
+    ```
+
+33. **View Branches**  
+    List all branches:
+    ```bash
+    git branch
+    ```
+
+34. **View Commit History in One Line**  
+    Get a brief log output:
+    ```bash
+    git log --oneline
+    ```
+
+35. **Return to Development Branch**  
+    Switch back to the development branch:
+    ```bash
+    git checkout dev
+    ```
+
+36. **Final Check**  
+    View the history again:
+    ```bash
+    git log --oneline
+    ```
+
+### Conclusion
+
+This tutorial covered the basic commands needed to set up and manage a Git repository. By practicing these commands, you'll be well on your way to mastering version control with Git! Happy coding!
